@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keefer Law Firm</title>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main_content">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Keefer Law Firm Logo" />
+        </div>
+        <div class="contact">
+          <p class="call-now">CALL OUR OFFICES NOW!</p>
+          <p class="phone">540.433.6906</p>
+          <p class="subtext">Get Your Questions Answered Fast</p>
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BIOGRAPHY</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">AREA WE SERVE</a></li>
+          <li><a href="#">LIBRARY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Section -->
+      <main class="main equal-height">
+        <!-- Left Banner -->
+        <div class="left-banner equal-box">
+          <img
+            src="./images/gurantee_banner.gif"
+            alt="DUI Defense Guarantee Banner"
+          />
+          <div class="bottom-shadow">
+            <img
+              src="./images/lf_bt_hr_shadow.png"
+              alt="section bottom shadow"
+            />
+          </div>
+        </div>
+
+        <!-- Right Form Section -->
+        <div class="right-form equal-box">
+          <div class="form-header">
+            <span class="label">QUESTIONS?</span>
+            <span class="question"
+              >Have a <strong>Question</strong> About Your Case?</span
+            >
+          </div>
+
+          <p class="info">
+            Enter your information and get your questions answered quickly and
+            discreetly or call us at:
+            <strong>540.433.6906</strong>
+          </p>
+
+          <form>
+            <div class="form-body">
+              <div class="form-fields">
+                <div class="input-pair">
+                  <label class="input-label" for="name">NAME:</label>
+                  <input type="text" id="name" name="name" placeholder="NAME" />
+                </div>
+                <div class="input-pair">
+                  <label class="input-label" for="email">EMAIL:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="EMAIL"
+                    required
+                  />
+                </div>
+                <div class="input-pair">
+                  <label class="input-label" for="phone">PHONE:</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="PHONE"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="img_center">
+                <img
+                  class="confidential"
+                  src="./images/confidential.png"
+                  alt="Confidential Stamp"
+                />
+              </div>
+            </div>
+
+            <textarea
+              placeholder="Tell us about your case here..."
+              name="case_description"
+              required
+            ></textarea>
+
+            <div class="text_detail">
+              <p class="detail">100% Privacy Guaranteed</p>
+              <button class="button1" type="submit">
+                Ask Us About Your Case
+                <img src="./images/bullet_white.gif" alt="Arrow icon" />
+              </button>
+            </div>
+          </form>
+
+          <div class="bottom-shadow">
+            <img
+              src="./images/lf_bt_hr_shadow.png"
+              alt="section bottom shadow"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  width: 100%;
+}
+
+.main_content {
+  background-color: #fff;
+  margin: 0 1vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 55vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 1vw;
+}
+
+.call-now {
+  color: #7d1e1e;
+  font-weight: 800;
+  font-size: 1.875rem;
+  border-bottom: 2px solid #333;
+  margin-left: auto;
+}
+
+.phone {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.subtext {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.navbar {
+  background-color: #740507;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1vw 2vw;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #656565;
+  padding: 1vw;
+  transition: background 0.3s ease;
+}
+
+.main {
+  display: flex;
+  gap: 2vw;
+  padding: 5vh 2vw;
+}
+
+/* Equal Height and Width Boxes */
+.equal-height {
+  display: flex;
+  align-items: stretch;
+}
+
+.equal-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-banner,
+.right-form {
+  width: 100%;
+}
+
+.left-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.right-form {
+  background: url(./images/form_bg.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+}
+
+.form-header {
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.label {
+  font-family: "Times New Roman", Georgia, serif;
+  background-color: #970c10;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.3em 0.6em;
+  font-size: 1.875rem;
+  height: 70px;
+}
+
+.question {
+  font-size: 1.875rem;
+  color: #333;
+  font-weight: 700;
+  padding: 0 1.2em;
+}
+
+.question strong {
+  color: #1c3f69;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.info {
+  padding: 0 1vw;
+  font-size: 1.25rem;
+}
+
+form {
+  margin: 1vh 2vw;
+}
+
+.form-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-fields {
+  flex: 1;
+  min-width: 250px;
+}
+
+.input-pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5vh;
+}
+input::placeholder{
+    opacity: 0;
+}
+.input-label {
+  width: 5rem;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.input-pair input {
+  flex: 1;
+  padding: 0.5em;
+  font-size: 0.875rem;
+  border: 1px solid #aaa;
+}
+
+.img_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.confidential {
+  width: 15vw;
+  max-width: 180px;
+  height: auto;
+  transform: rotate(15deg);
+  margin-left: 1vw;
+  filter: saturate(200%);
+}
+
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5vh;
+  padding: 0.5em;
+  font-size: 0.875rem;
+  font-weight: bolder;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  height: 10vh;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #242225;
+  font-size: 0.9375rem;
+  font-weight: 900;
+}
+
+.text_detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail {
+  font-size: 0.9375rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.button1 {
+  background-color: #a60206;
+  color: white;
+  font-weight: bold;
+  padding: 0.7em 1em;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  margin: 2vh 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 2px 2px 8px #000000;
+}
+
+.button1:hover {
+  background-color: #a31918;
+}
+
+.bottom-shadow img {
+  width: 100%;
+  height: 6px;
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+}
