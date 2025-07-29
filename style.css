@@ -233,7 +233,8 @@ header {
 
 .badges {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
   margin-bottom: 20px;
 }
 
@@ -432,10 +433,15 @@ body {
   box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 .badge {
-  display: block !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem ;
 }
+
 .badge img {
-  width: 70%;
+
   margin: 0.625rem 0;
   display: block;
 }
@@ -475,8 +481,10 @@ body {
   }
 
   .badge {
-    padding-left: 0;
-    text-align: center;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .badge img {
@@ -505,12 +513,5 @@ body {
 @media (min-width: 992px) {
   .hide::placeholder {
     color: transparent;
-  }
-}
-
-/* Show placeholder on small screens */
-@media (max-width: 991px) {
-  .hide::placeholder {
-    color: gray;
   }
 }
